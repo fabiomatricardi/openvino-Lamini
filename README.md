@@ -7,8 +7,11 @@ test openvino
 - https://github.com/openvinotoolkit/openvino
 - https://huggingface.co/docs/optimum/main/intel/openvino/inference
 - https://huggingface.co/docs/optimum/main/intel/openvino/reference
-- 
+- https://github.com/intel-analytics/ipex-llm
+- https://github.com/intel-analytics/ipex-llm/blob/main/docs/mddocs/Quickstart/install_windows_gpu.md
 
+
+### Create `venv` and install dependencies
 ```
 ➜ python -m venv venv
 ➜ venv\Scripts\activate
