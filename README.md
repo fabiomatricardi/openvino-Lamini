@@ -2,6 +2,13 @@
 test openvino
 
 
+#### References
+- https://huggingface.co/docs/optimum/main/intel/openvino/export
+- https://github.com/openvinotoolkit/openvino
+- https://huggingface.co/docs/optimum/main/intel/openvino/inference
+- https://huggingface.co/docs/optimum/main/intel/openvino/reference
+- 
+
 ```
 ➜ python -m venv venv
 ➜ venv\Scripts\activate
