@@ -16,6 +16,7 @@ test openvino
 ➜ python -m venv venv
 ➜ venv\Scripts\activate
 pip install --upgrade --upgrade-strategy eager "optimum[openvino]"
+pip install accelerate
 
 ▶ optimum-cli export openvino --model .\model248M\ --task text2text-generation-with-past --weight-format int8 lamini248M_ov/
 ```
