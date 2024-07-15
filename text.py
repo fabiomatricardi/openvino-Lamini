@@ -4,6 +4,7 @@ from psutil._common import bytes2human
 import psutil
 import sys
 from time import sleep
+import datetime
 mem_usage = psutil.virtual_memory()
 total_in_human_format = bytes2human(mem_usage[3])
 print(f'Acutal used memory: {total_in_human_format}')
@@ -39,10 +40,15 @@ while True:
     print("\033[92;1m")
 
     full_response = ""
+    print("\033[1;30m")  #dark grey
+    start = datetime.datetime.now()
     results = pipe(userinput)
+    delta = datetime.datetime.now() - start
     mem_usage = psutil.virtual_memory()
     total_in_human_format = bytes2human(mem_usage[3])
     print(f'RAM in use: {total_in_human_format}')
+    print(f'Generation time: {delta}')
+    print("\033[92;1m")
     for chunk in results[0]['generated_text']:
                 print(chunk, end="", flush=True)
                 sleep(0.012)                        
