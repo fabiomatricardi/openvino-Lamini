@@ -17,6 +17,7 @@ test openvino
 ➜ venv\Scripts\activate
 pip install --upgrade --upgrade-strategy eager "optimum[openvino]"
 pip install accelerate
+pip install streamlit==1.36.0 tiktoken
 
 ▶ optimum-cli export openvino --model .\model248M\ --task text2text-generation-with-past --weight-format int8 lamini248M_ov/
 ```
