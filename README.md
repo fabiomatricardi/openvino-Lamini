@@ -1,6 +1,11 @@
 # openvino-Lamini
-test openvino
+test openvino with encoder-decoder models
 
+[![Mentioned in Awesome OpenVINO](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/openvinotoolkit/awesome-openvino)
+
+[LaMini Power](https://github.com/fabiomatricardi/openvino-Lamini) - An experimental text based chat interface in the terminal running the [LaMini-Flan-T5-248M](https://huggingface.co/MBZUAI/LaMini-Flan-T5-248M) . This is a breakthrough made possible by openvino, because encoder-decoder model could not be quantized. The [LaMini model family](https://github.com/mbzuai-nlp/lamini-lm/) is a highly curated herd of very small models achieving strong accuracy even with only 512 tokens of context length.
+
+---
 
 #### References
 - https://huggingface.co/docs/optimum/main/intel/openvino/export
